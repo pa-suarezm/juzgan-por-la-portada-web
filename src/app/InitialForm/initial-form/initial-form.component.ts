@@ -22,7 +22,6 @@ export class InitialFormComponent implements OnInit {
   }
 
   public onClickNo() {
-    localStorage.setItem('completed-initial-survey', 'true');
     this.router.navigate(['home']);
   }
 
