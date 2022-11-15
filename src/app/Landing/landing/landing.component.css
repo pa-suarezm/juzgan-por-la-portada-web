@@ -1,0 +1,18 @@
+.container-fluid {
+  background-image: url('../../../assets/imgs/landing-bg.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  max-width: 100% !important;
+}
+
+#title {
+  padding-left: 2em;
+}
+
+.section {
+  background-color: #f4f2f3;
+  min-height: fit-content;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+}
