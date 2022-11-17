@@ -18,7 +18,7 @@ export class InitialFormComponent implements OnInit {
 
   public onClickYes() {
     localStorage.setItem('completed-initial-survey', 'true');
-    this.router.navigateByUrl("https://docs.google.com/forms/d/e/1FAIpQLSfhCZ9xGBwaOf1q_NVdd9s03bqdfW-B2HHzedFkzRu4_eF3_g/viewform");
+    window.location.href = 'https://docs.google.com/forms/d/e/1FAIpQLSfhCZ9xGBwaOf1q_NVdd9s03bqdfW-B2HHzedFkzRu4_eF3_g/viewform';
   }
 
   public onClickNo() {
