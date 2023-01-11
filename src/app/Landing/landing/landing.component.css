@@ -25,3 +25,8 @@
 iframe {
   max-width: 100%;
 }
+
+.orgs {
+  text-decoration: underline;
+  cursor: pointer;
+}

@@ -149,31 +149,57 @@
     </div>
     <div class="col-md-6 col-sm-12 quotes">
       <h4>
-        <a>
-          IDPYBA
+        <a class="orgs" (click)="openPopup(0)">
+          <em>
+            IDPYBA
+          </em>
         </a>
       </h4>
       <br />
       <h4>
-        <a>
-          Fundación Tepa
+        <a class="orgs" (click)="openPopup(1)">
+          <em>
+            Fundación Tepa
+          </em>
         </a>
       </h4>
     </div>
     <br />
     <div class="col-md-6 col-sm-12 quotes">
       <h4>
-        <a>
-          Dejando Huella
+        <a class="orgs" (click)="openPopup(2)">
+          <em>
+            Dejando Huella
+          </em>
         </a>
       </h4>
       <br />
       <h4>
-        <a>
-          Corazón Peludito
+        <a class="orgs" (click)="openPopup(3)">
+          <em>
+            Corazón Peludito
+          </em>
         </a>
       </h4>
     </div>
   </div>
-  <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+  <br /><br /><br /><br /><br /><br /><br /><br />
+</div>
+
+<div class="modal" tabindex="-1" role="dialog" [ngStyle]="{'display':displayStyle}">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">{{ currentData.name }}</h4>
+      </div>
+      <div class="modal-body">
+        <p>{{ currentData.description }}</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" (click)="closePopup()">
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
 </div>
