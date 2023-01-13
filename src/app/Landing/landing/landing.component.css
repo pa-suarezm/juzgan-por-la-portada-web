@@ -30,3 +30,8 @@ iframe {
   text-decoration: underline;
   cursor: pointer;
 }
+
+#modal-img {
+  max-height: 4em;
+  width: auto;
+}

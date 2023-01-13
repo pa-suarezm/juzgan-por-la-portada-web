@@ -193,10 +193,16 @@
         <h4 class="modal-title">{{ currentData.name }}</h4>
       </div>
       <div class="modal-body">
+        <p>
+          <img id="modal-img" [src]="currentData.image" />
+        </p>
         <p>{{ currentData.description }}</p>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-danger" (click)="closePopup()">
+        <button type="button" class="btn btn-outline-secondary" (click)="openUrl(currentData.url)">
+          Web
+        </button>
+        <button type="button" class="btn btn-outline-danger" (click)="closePopup()">
           Close
         </button>
       </div>

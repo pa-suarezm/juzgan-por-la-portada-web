@@ -50,6 +50,10 @@ export class LandingComponent implements OnInit {
   public closePopup(): void {
     this.displayStyle = "none";
   }
+
+  public openUrl(url: string): void {
+    window.location.href = url;
+  }
 }
 
 class Organization {
